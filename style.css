@@ -6,10 +6,12 @@ body {
 	margin: 0px;
 	padding: 0px;
 	height: 100%;
+	font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, p {
 	margin: 0px;
+	font-weight: 400;
 	padding: 0px;
 }
 
@@ -21,10 +23,24 @@ a {
 	text-decoration: none;
 }
 
-.sans-font {
-	font-family: "Helvetica", "Arial", sans-serif;
+/* Font */
+.title-font {
+	font-family: 'Josefin Sans', sans-serif;
 }
 
+.body-font {
+	font-family: 'Raleway', sans-serif;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.light {
+	font-weight: 100;
+}
+
+/* Layout */
 .centered {
 	margin: 0px auto;
 	text-align: center;
@@ -32,4 +48,84 @@ a {
 
 .limit-width {
 	max-width: 600px;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.float-right {
+	float: right;
+}
+
+.half-width {
+	width: 50%;
+	height: 100vh;
+}
+
+.half-height {
+	height: 50%;
+}
+
+.flex {
+	display: flex
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Color */
+.mid-grey-bk {
+	background-color: #d4d3d447;
+}
+
+.teal {
+	color: #21b592;
+}
+
+a.teal:hover {
+	color: #424242;
+}
+
+.teal-bk {
+	background-color: #21b592;
+}
+
+.white {
+	color: #fafafa;
+}
+
+/* Specific styles */
+.scott-headshot {
+	background-image: url('./headshot-lg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-bottom: -5px; /* weird gap at bottom of screen */
+}
+
+.links {
+	font-size: 120%;
+}
+
+.link-margin {
+	margin-bottom: 5px;
+}
+
+@media (max-width: 850px) {
+	.half-width {
+		width: 100%;
+		height: auto;
+	}
+
+	.half-height {
+		min-height: 300px;
+	}
+
+	.scott-headshot {
+		min-height: 300px;
+	}
 }
