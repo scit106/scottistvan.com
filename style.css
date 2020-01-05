@@ -78,6 +78,10 @@ a {
 	align-items: center;
 }
 
+.margin-bottom {
+	margin-bottom: 10px;
+}
+
 /* Color */
 .mid-grey-bk {
 	background-color: #d4d3d447;
@@ -113,6 +117,10 @@ a.teal:hover {
 
 .link-margin {
 	margin-bottom: 5px;
+}
+
+.icon-links-row {
+	margin-top: 10px;
 }
 
 @media (max-width: 850px) {
