@@ -58,9 +58,12 @@ a {
 	float: right;
 }
 
+.full-height {
+	height: 100vh;
+}
+
 .half-width {
 	width: 50%;
-	height: 100vh;
 }
 
 .half-height {
